@@ -3,22 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abdul Fousan — Software Engineer</title>
-  <meta name="description" content="Abdul Fousan — software engineer at Sri Mookambika Infosolutions, building Java and TypeScript platforms for workflow automation. Based in Chennai, India.">
+  <title>Abdul Fousan — open-source enthusiast</title>
+  <meta name="description" content="Abdul Fousan — open-source contributor and enthusiast who likes workflow engines, BPMN, Java and TypeScript. Tinkering on GitHub since 2012.">
   <meta name="author" content="Abdul Fousan">
-  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#07090f">
   <link rel="canonical" href="https://abdulfousan.github.io/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Abdul Fousan — Software Engineer">
-  <meta property="og:description" content="Java and TypeScript engineer building workflow automation platforms.">
+  <meta property="og:title" content="Abdul Fousan — open-source enthusiast">
+  <meta property="og:description" content="Workflows, engines and the open-source projects that run them.">
   <meta property="og:url" content="https://abdulfousan.github.io/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/2051710?v=4">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@abdulfousan">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='system-ui,sans-serif' font-size='30' font-weight='700' fill='white'%3EAF%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090f'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%237cf4c8' stroke-width='5'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -26,308 +29,374 @@
     "@type": "Person",
     "name": "Abdul Fousan",
     "url": "https://abdulfousan.github.io/",
-    "jobTitle": "Software Engineer",
-    "worksFor": { "@type": "Organization", "name": "Sri Mookambika Infosolutions" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressCountry": "IN" },
+    "description": "Open-source contributor and enthusiast",
     "sameAs": ["https://github.com/abdulfousan", "https://x.com/abdulfousan"]
   }
   </script>
 
   <style>
     :root {
-      --bg: #f8fafc;
-      --surface: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --border: #e2e8f0;
-      --accent: #2563eb;
-      --accent-soft: #dbeafe;
-      --shadow: 0 1px 2px rgb(15 23 42 / .06), 0 4px 16px rgb(15 23 42 / .06);
-      --radius: 14px;
-      color-scheme: light;
+      --bg: #07090f;
+      --bg-2: #0d1118;
+      --ink: #e8ecf3;
+      --ink-dim: #8b95a7;
+      --line: #1d2531;
+      --grid: #131a24;
+      --mint: #7cf4c8;
+      --amber: #ffc46b;
+      --rose: #ff7a9e;
+      --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      --sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+      --w: 1080px;
     }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --bg: #0b1120;
-        --surface: #111827;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --border: #1f2937;
-        --accent: #60a5fa;
-        --accent-soft: #172554;
-        --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 4px 16px rgb(0 0 0 / .25);
-        color-scheme: dark;
-      }
-    }
-    :root[data-theme="dark"] {
-      --bg: #0b1120;
-      --surface: #111827;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --border: #1f2937;
-      --accent: #60a5fa;
-      --accent-soft: #172554;
-      --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 4px 16px rgb(0 0 0 / .25);
-      color-scheme: dark;
-    }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+    :root[data-theme="dark"] { color-scheme: dark; }
 
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: var(--sans);
       background: var(--bg);
-      color: var(--text);
+      color: var(--ink);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    /* modeler-canvas dot grid */
+    body::before {
+      content: "";
+      position: fixed; inset: 0; z-index: -1;
+      background-image: radial-gradient(var(--grid) 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+      mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 85%);
+    }
+    ::selection { background: var(--mint); color: var(--bg); }
 
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    a { color: var(--mint); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
 
+    .wrap { max-width: var(--w); margin: 0 auto; padding: 0 20px; }
+    .mono { font-family: var(--mono); }
     .skip { position: absolute; left: -9999px; }
-    .skip:focus { left: 16px; top: 16px; background: var(--surface); padding: 8px 12px; z-index: 10; }
+    .skip:focus { left: 16px; top: 16px; background: var(--bg-2); padding: 8px 12px; z-index: 50; }
 
-    /* Header */
-    header.site {
-      position: sticky; top: 0; z-index: 5;
-      background: color-mix(in srgb, var(--bg) 85%, transparent);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-    }
-    header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
-    .brand { font-weight: 700; color: var(--text); letter-spacing: -.01em; }
-    nav ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; align-items: center; }
-    nav a { color: var(--muted); padding: 6px 10px; border-radius: 8px; font-size: .95rem; }
-    nav a:hover { color: var(--text); background: var(--accent-soft); text-decoration: none; }
-    .theme-toggle {
-      border: 1px solid var(--border); background: var(--surface); color: var(--text);
-      width: 36px; height: 36px; border-radius: 10px; cursor: pointer; display: grid; place-items: center;
-    }
-    @media (max-width: 560px) { nav .nav-link { display: none; } }
+    /* ---------- top bar ---------- */
+    .bar { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 58px; }
+    .brand { font-family: var(--mono); font-size: .9rem; color: var(--ink); display: inline-flex; gap: 10px; align-items: center; }
+    .brand i { width: 12px; height: 12px; border: 2px solid var(--mint); border-radius: 50%; display: inline-block; }
+    .bar nav { display: flex; gap: 22px; font-family: var(--mono); font-size: .82rem; }
+    .bar nav a { color: var(--ink-dim); }
+    .bar nav a:hover { color: var(--ink); text-decoration: none; }
+    .bar nav a span { color: var(--mint); margin-right: 4px; }
+    @media (max-width: 520px) { .bar nav { gap: 14px; } .bar nav span { display: none; } }
 
-    /* Hero */
-    .hero { padding: 72px 0 56px; display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; }
-    .avatar {
-      width: 132px; height: 132px; border-radius: 50%;
-      border: 4px solid var(--surface); box-shadow: var(--shadow);
-      background: var(--accent-soft);
-    }
-    .eyebrow { color: var(--accent); font-weight: 600; font-size: .9rem; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 6px; }
-    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 12px; letter-spacing: -.02em; }
-    .lede { font-size: 1.125rem; color: var(--muted); margin: 0 0 22px; max-width: 58ch; }
-    .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--muted); font-size: .95rem; margin-bottom: 24px; }
-    .meta span { display: inline-flex; align-items: center; gap: 6px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 16px; border-radius: 10px; font-weight: 600; font-size: .95rem;
-      border: 1px solid var(--border); background: var(--surface); color: var(--text);
-      transition: transform .15s ease, box-shadow .15s ease;
-    }
-    .btn:hover { text-decoration: none; transform: translateY(-1px); box-shadow: var(--shadow); }
-    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-    :root[data-theme="dark"] .btn.primary { color: #0b1120; }
-    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn.primary { color: #0b1120; } }
-    .btn svg, .meta svg { width: 18px; height: 18px; flex: none; }
+    /* ---------- hero ---------- */
+    .hero { padding: 80px 0 40px; }
+    .kicker { font-family: var(--mono); font-size: .8rem; color: var(--mint); letter-spacing: .08em; margin: 0 0 18px; display: flex; align-items: center; gap: 10px; }
+    .kicker::before { content: ""; width: 28px; height: 1px; background: var(--mint); }
+    h1 { font-size: clamp(2.6rem, 8vw, 5.4rem); line-height: .98; letter-spacing: -.035em; margin: 0 0 24px; font-weight: 700; max-width: 14ch; }
+    h1 em { font-style: normal; color: transparent; -webkit-text-stroke: 1.5px var(--ink); }
+    .lede { font-size: clamp(1.05rem, 2vw, 1.3rem); color: var(--ink-dim); max-width: 56ch; margin: 0 0 28px; }
+    .lede b { color: var(--ink); font-weight: 500; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { font-family: var(--mono); font-size: .85rem; padding: 11px 18px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink); background: var(--bg-2); display: inline-flex; align-items: center; gap: 8px; transition: transform .15s, border-color .15s; }
+    .btn:hover { text-decoration: none; transform: translateY(-2px); border-color: var(--mint); }
+    .btn.solid { background: var(--mint); color: var(--bg); border-color: var(--mint); font-weight: 600; }
+    .btn svg { width: 16px; height: 16px; }
 
-    @media (max-width: 640px) {
-      .hero { grid-template-columns: 1fr; text-align: left; padding: 48px 0 40px; gap: 20px; }
-      .avatar { width: 96px; height: 96px; }
+    /* ---------- process diagram ---------- */
+    .diagram { margin: 56px 0 0; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(180deg, var(--bg-2), transparent); padding: 18px 10px 6px; overflow: hidden; position: relative; }
+    .diagram .label { position: absolute; top: 12px; left: 16px; font-family: var(--mono); font-size: .72rem; color: var(--ink-dim); }
+    .diagram { overflow-x: auto; }
+    .diagram svg { width: 100%; min-width: 620px; height: auto; display: block; }
+    .bpmn .flow { fill: none; stroke: var(--ink-dim); stroke-width: 1.5; }
+    .bpmn .node { fill: var(--bg); stroke: var(--ink); stroke-width: 1.5; }
+    .bpmn .node.end { stroke-width: 4; }
+    .bpmn .node.gw { stroke: var(--amber); }
+    .bpmn text { fill: var(--ink); font-family: var(--mono); font-size: 12px; text-anchor: middle; dominant-baseline: middle; }
+    .bpmn .small { fill: var(--ink-dim); font-size: 10px; }
+    .bpmn .token { fill: var(--mint); filter: drop-shadow(0 0 6px var(--mint)); }
+    .bpmn .token.b { fill: var(--rose); filter: drop-shadow(0 0 6px var(--rose)); }
+
+    /* ---------- stats strip ---------- */
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; margin-top: 18px; }
+    .stat { background: var(--bg); padding: 18px 20px; }
+    .stat b { display: block; font-family: var(--mono); font-size: 1.7rem; font-weight: 600; color: var(--mint); line-height: 1.1; }
+    .stat span { font-size: .85rem; color: var(--ink-dim); }
+
+    /* ---------- sections ---------- */
+    section { padding: 80px 0 20px; }
+    .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 10px; }
+    .sec-head .n { font-family: var(--mono); color: var(--amber); font-size: .85rem; white-space: nowrap; }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); letter-spacing: -.02em; margin: 0; }
+    .sec-intro { color: var(--ink-dim); max-width: 62ch; margin: 0 0 32px; }
+
+    /* tasks (BPMN task cards) */
+    .tasks { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); position: relative; }
+    .task { position: relative; border: 1.5px solid var(--ink); border-radius: 12px; padding: 22px 20px 20px; background: var(--bg); transition: transform .2s, border-color .2s; }
+    .task:hover { transform: translateY(-4px); border-color: var(--mint); }
+    .task .icon { position: absolute; top: 10px; left: 12px; width: 18px; height: 18px; color: var(--amber); }
+    .task .idx { position: absolute; top: 10px; right: 14px; font-family: var(--mono); font-size: .72rem; color: var(--ink-dim); }
+    .task h3 { margin: 16px 0 6px; font-size: 1.1rem; }
+    .task p { margin: 0; color: var(--ink-dim); font-size: .93rem; }
+    .task .tags { margin: 14px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+    .task .tags li { font-family: var(--mono); font-size: .72rem; padding: 3px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink-dim); }
+    @media (min-width: 1000px) {
+      .task:not(:last-child)::after { content: ""; position: absolute; top: 50%; right: -18px; width: 18px; height: 1.5px; background: var(--ink-dim); }
+      .task:not(:last-child)::before { content: ""; position: absolute; top: calc(50% - 4px); right: -19px; border: 4.5px solid transparent; border-left: 7px solid var(--ink-dim); z-index: 1; }
     }
 
-    /* Sections */
-    section { padding: 48px 0; border-top: 1px solid var(--border); }
-    h2 { font-size: 1.5rem; margin: 0 0 8px; letter-spacing: -.01em; }
-    .section-intro { color: var(--muted); margin: 0 0 28px; max-width: 65ch; }
-
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
-    .card {
-      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 20px; box-shadow: var(--shadow);
-    }
-    .grid.areas { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-    .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
-    .card p { margin: 0; color: var(--muted); font-size: .95rem; }
-
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; padding: 0; list-style: none; }
-    .tags li {
-      font-size: .8rem; font-weight: 600; padding: 4px 10px; border-radius: 999px;
-      background: var(--accent-soft); color: var(--accent);
-    }
-
-    /* Repos */
-    .repo { display: flex; flex-direction: column; gap: 10px; transition: border-color .15s ease, transform .15s ease; }
-    .repo:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .repo h3 a { color: var(--text); word-break: break-word; }
-    .repo p { flex: 1; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-    .repo-meta { display: flex; gap: 14px; font-size: .85rem; color: var(--muted); align-items: center; flex-wrap: wrap; }
-    .lang-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; vertical-align: middle; }
-    .skeleton { min-height: 130px; background: linear-gradient(90deg, var(--surface), var(--border), var(--surface)); background-size: 200% 100%; animation: shimmer 1.4s infinite; }
+    /* ---------- git log ---------- */
+    .log { font-family: var(--mono); font-size: .88rem; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); overflow: hidden; }
+    .log-head { padding: 10px 16px; border-bottom: 1px solid var(--line); color: var(--ink-dim); font-size: .75rem; display: flex; gap: 8px; align-items: center; }
+    .log-head i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); display: inline-block; }
+    .log-head i:nth-child(1) { background: var(--rose); } .log-head i:nth-child(2) { background: var(--amber); } .log-head i:nth-child(3) { background: var(--mint); }
+    .log-head span { margin-left: 8px; }
+    .log ol { list-style: none; margin: 0; padding: 6px 0; }
+    .log li { display: grid; grid-template-columns: 24px 1fr auto; gap: 12px; align-items: baseline; padding: 11px 16px; border-bottom: 1px dashed var(--line); position: relative; }
+    .log li:last-child { border-bottom: 0; }
+    .log li::before { content: ""; position: absolute; left: 23px; top: 0; bottom: 0; width: 1px; background: var(--line); }
+    .log li:first-child::before { top: 50%; } .log li:last-child::before { bottom: 50%; }
+    .log .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--mint); justify-self: center; align-self: center; z-index: 1; box-shadow: 0 0 0 3px var(--bg-2); }
+    .log .msg a { color: var(--ink); font-weight: 600; }
+    .log .msg small { display: block; color: var(--ink-dim); font-size: .8rem; margin-top: 2px; overflow-wrap: anywhere; }
+    .log .meta { color: var(--ink-dim); font-size: .75rem; text-align: right; white-space: nowrap; }
+    .log .meta b { font-weight: 400; color: var(--amber); display: block; }
+    .log .empty { padding: 20px 16px; color: var(--ink-dim); }
+    .skel { height: 48px; margin: 8px 16px; border-radius: 8px; background: linear-gradient(90deg, var(--bg-2), var(--line), var(--bg-2)); background-size: 200% 100%; animation: shimmer 1.4s infinite; }
     @keyframes shimmer { to { background-position: -200% 0; } }
-    @media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
-    .more { margin-top: 24px; }
+    .more { margin-top: 16px; font-family: var(--mono); font-size: .85rem; }
 
-    /* Contact */
-    .contact-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-    .contact-list a { display: flex; align-items: center; gap: 12px; color: var(--text); }
-    .contact-list a:hover { text-decoration: none; border-color: var(--accent); }
-    .contact-list svg { width: 22px; height: 22px; color: var(--accent); flex: none; }
-    .contact-list small { display: block; color: var(--muted); }
+    /* ---------- upstream ---------- */
+    .upstream { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+    .up { display: block; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: var(--bg-2); transition: border-color .15s, transform .15s; }
+    .up:hover { text-decoration: none; border-color: var(--amber); transform: translateY(-2px); }
+    .up b { display: block; font-family: var(--mono); font-size: .9rem; font-weight: 600; }
+    .up span { color: var(--ink-dim); font-size: .85rem; }
 
-    footer { padding: 32px 0 48px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--border); }
+    /* ---------- marquee ---------- */
+    .marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 60px 0 0; padding: 12px 0; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+    .marquee div { display: flex; gap: 40px; width: max-content; animation: scroll 40s linear infinite; font-family: var(--mono); font-size: .8rem; color: var(--ink-dim); }
+    .marquee span::before { content: "◆"; color: var(--amber); margin-right: 40px; font-size: .6rem; }
+    @keyframes scroll { to { transform: translateX(-50%); } }
+
+    /* ---------- end event ---------- */
+    .end { padding: 90px 0 70px; text-align: center; }
+    .end .ring { width: 72px; height: 72px; border-radius: 50%; border: 5px solid var(--ink); margin: 0 auto 22px; display: grid; place-items: center; }
+    .end .ring i { width: 22px; height: 22px; border-radius: 50%; background: var(--mint); animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 50% { transform: scale(.7); opacity: .6; } }
+    .end h2 { margin-bottom: 10px; }
+    .end p { color: var(--ink-dim); max-width: 48ch; margin: 0 auto 26px; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0 40px; font-family: var(--mono); font-size: .75rem; color: var(--ink-dim); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .marquee div, .end .ring i, .skel { animation: none; }
+      .task, .btn, .up { transition: none; }
+    }
   </style>
-  <script>
-    // Apply saved theme before paint to avoid a flash.
-    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site">
+  <header class="bar">
     <div class="wrap">
-      <a class="brand" href="#top">Abdul Fousan</a>
+      <a class="brand" href="#top"><i aria-hidden="true"></i>abdulfousan</a>
       <nav aria-label="Primary">
-        <ul>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-          <li>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            </button>
-          </li>
-        </ul>
+        <a href="#process"><span>01</span>process</a>
+        <a href="#log"><span>02</span>log</a>
+        <a href="#upstream"><span>03</span>upstream</a>
+        <a href="#end"><span>04</span>end</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <div class="wrap" id="top">
-      <div class="hero">
-        <img class="avatar" src="https://avatars.githubusercontent.com/u/2051710?v=4&s=264" alt="Portrait of Abdul Fousan" width="132" height="132">
-        <div>
-          <p class="eyebrow">Software Engineer</p>
-          <h1>Hi, I'm Abdul Fousan.</h1>
-          <p class="lede">I build backend services and web applications with Java and TypeScript, with a focus on workflow automation and BPMN-based process platforms.</p>
-          <div class="meta">
-            <span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-              Sri Mookambika Infosolutions
-            </span>
-            <span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Chennai · Madurai · Ramanathapuram, India
-            </span>
-          </div>
-          <div class="actions">
-            <a class="btn primary" href="#contact">Get in touch</a>
-            <a class="btn" href="https://github.com/abdulfousan" rel="me">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
-              GitHub
-            </a>
-          </div>
-        </div>
+    <!-- ============ HERO ============ -->
+    <div class="wrap hero" id="top">
+      <p class="kicker">start event · open-source enthusiast</p>
+      <h1>I like the engines <em>behind</em> the work.</h1>
+      <p class="lede">I'm <b>Abdul Fousan</b> — an open-source contributor and tinkerer who gets a kick out of workflow engines, BPMN, and the glue code that makes systems talk to each other. Mostly <b>Java</b> and <b>TypeScript</b>, occasionally whatever the problem asks for.</p>
+      <div class="cta">
+        <a class="btn solid" href="https://github.com/abdulfousan" rel="me">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          github.com/abdulfousan
+        </a>
+        <a class="btn" href="#log">see the log ↓</a>
+      </div>
+
+      <!-- animated BPMN process -->
+      <div class="diagram" aria-label="An animated BPMN diagram of how I work: start, explore, decide, build or contribute, ship">
+        <span class="label">process · how-i-spend-weekends.bpmn</span>
+        <svg class="bpmn" id="bpmn" viewBox="0 0 760 210" role="img" aria-hidden="true">
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#8b95a7"/>
+            </marker>
+          </defs>
+          <!-- flows -->
+          <path class="flow" d="M58 105 H98" marker-end="url(#arr)"/>
+          <path class="flow" d="M220 105 H268" marker-end="url(#arr)"/>
+          <path class="flow" d="M290 83 V55 H358" marker-end="url(#arr)"/>
+          <path class="flow" d="M290 127 V155 H358" marker-end="url(#arr)"/>
+          <path class="flow" d="M480 55 H560 V81" marker-end="url(#arr)"/>
+          <path class="flow" d="M480 155 H560 V129" marker-end="url(#arr)"/>
+          <path class="flow" d="M582 105 H640" marker-end="url(#arr)"/>
+          <!-- nodes -->
+          <circle class="node" cx="40" cy="105" r="18"/>
+          <text class="small" x="40" y="140">idea</text>
+          <rect class="node" x="100" y="75" width="120" height="60" rx="10"/>
+          <text x="160" y="105">explore</text>
+          <polygon class="node gw" points="290,83 312,105 290,127 268,105"/>
+          <text class="small" x="244" y="150">worth it?</text>
+          <text class="small" x="300" y="45">yes, build</text>
+          <text class="small" x="324" y="170">fix upstream</text>
+          <rect class="node" x="360" y="25" width="120" height="60" rx="10"/>
+          <text x="420" y="55">build</text>
+          <rect class="node" x="360" y="125" width="120" height="60" rx="10"/>
+          <text x="420" y="155">contribute</text>
+          <polygon class="node gw" points="560,83 582,105 560,127 538,105"/>
+          <circle class="node end" cx="660" cy="105" r="18"/>
+          <text class="small" x="660" y="140">shipped</text>
+          <text class="small" x="700" y="105">∞</text>
+          <!-- tokens -->
+          <circle class="token" r="6">
+            <animateMotion dur="7s" repeatCount="indefinite" path="M58 105 H268 L290 83 V55 H560 V83 L582 105 H640" keyPoints="0;1" keyTimes="0;1" calcMode="linear"/>
+          </circle>
+          <circle class="token b" r="6" visibility="hidden">
+            <set attributeName="visibility" to="visible" begin="3.5s"/>
+            <animateMotion dur="7s" begin="3.5s" repeatCount="indefinite" path="M58 105 H268 L290 127 V155 H560 V127 L582 105 H640"/>
+          </circle>
+        </svg>
+      </div>
+
+      <div class="stats" id="stats">
+        <div class="stat"><b id="s-years">14+</b><span>years on GitHub</span></div>
+        <div class="stat"><b id="s-repos">17</b><span>public repositories</span></div>
+        <div class="stat"><b id="s-forks">—</b><span>upstream projects forked</span></div>
+        <div class="stat"><b>∞</b><span>side quests in progress</span></div>
       </div>
     </div>
 
-    <section id="about">
+    <!-- ============ PROCESS ============ -->
+    <section id="process">
       <div class="wrap">
-        <h2>What I work on</h2>
-        <p class="section-intro">I've been writing software and sharing code on GitHub since 2012. These days most of my time goes into these areas.</p>
-        <div class="grid areas">
-          <article class="card">
-            <h3>Backend engineering</h3>
-            <p>Production-ready REST services and process engines on the JVM.</p>
-            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Quarkus</li><li>Dropwizard</li></ul>
+        <div class="sec-head"><span class="n">01 /</span><h2>Things I keep coming back to</h2></div>
+        <p class="sec-intro">Every task in the diagram above expands into one of these. Hover a card — they're wired together like a real process.</p>
+        <div class="tasks">
+          <article class="task">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span class="idx">task 01</span>
+            <h3>Workflow engines</h3>
+            <p>Process automation with BPMN &amp; DMN — modelling, external task workers, and poking at how engines execute under the hood.</p>
+            <ul class="tags"><li>BPMN</li><li>Camunda</li><li>DMN</li></ul>
           </article>
-          <article class="card">
-            <h3>Workflow automation</h3>
-            <p>Modelling and running business processes with BPMN and DMN, plus external task workers.</p>
-            <ul class="tags"><li>BPMN</li><li>Camunda</li><li>Node.js</li></ul>
+          <article class="task">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+            <span class="idx">task 02</span>
+            <h3>JVM services</h3>
+            <p>Small, production-shaped backends. I enjoy frameworks that stay out of the way and start fast.</p>
+            <ul class="tags"><li>Java</li><li>Quarkus</li><li>Spring Boot</li><li>Dropwizard</li></ul>
           </article>
-          <article class="card">
-            <h3>Frontend</h3>
-            <p>Web and mobile interfaces, from admin dashboards to visual designers.</p>
+          <article class="task">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg>
+            <span class="idx">task 03</span>
+            <h3>Interfaces &amp; designers</h3>
+            <p>Front-ends for the engines above: dashboards, drag-and-drop designers, the occasional video player experiment.</p>
             <ul class="tags"><li>TypeScript</li><li>React</li><li>Angular</li><li>Tailwind</li></ul>
           </article>
-          <article class="card">
-            <h3>Cloud &amp; platform</h3>
-            <p>Serverless deployments, identity, and the tooling that keeps services running.</p>
-            <ul class="tags"><li>AWS SAM</li><li>Docker</li><li>Shell</li></ul>
+          <article class="task">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <span class="idx">task 04</span>
+            <h3>Glue &amp; infra</h3>
+            <p>Identity, storage, serverless, shell scripts — the unglamorous bits that make a demo survive contact with reality.</p>
+            <ul class="tags"><li>Keycloak</li><li>AWS SAM</li><li>Docker</li><li>Shell</li></ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projects">
+    <!-- ============ LOG ============ -->
+    <section id="log">
       <div class="wrap">
-        <h2>Open source</h2>
-        <p class="section-intro">My public repositories on GitHub, most recently updated first. This list updates automatically.</p>
-        <div class="grid" id="repos" aria-live="polite">
-          <div class="card skeleton" aria-hidden="true"></div>
-          <div class="card skeleton" aria-hidden="true"></div>
-          <div class="card skeleton" aria-hidden="true"></div>
+        <div class="sec-head"><span class="n">02 /</span><h2>git log --public</h2></div>
+        <p class="sec-intro">My own public repositories, pulled live from GitHub. Some are experiments, some are ancient — that's the point of a log.</p>
+        <div class="log">
+          <div class="log-head"><i></i><i></i><i></i><span>~/github/abdulfousan</span></div>
+          <ol id="repos" aria-live="polite">
+            <li class="skel" aria-hidden="true"></li><li class="skel" aria-hidden="true"></li><li class="skel" aria-hidden="true"></li>
+          </ol>
         </div>
-        <p class="more"><a href="https://github.com/abdulfousan?tab=repositories">See all repositories on GitHub →</a></p>
+        <p class="more"><a href="https://github.com/abdulfousan?tab=repositories">$ open github.com/abdulfousan?tab=repositories →</a></p>
       </div>
     </section>
 
-    <section id="contact">
+    <!-- ============ UPSTREAM ============ -->
+    <section id="upstream">
       <div class="wrap">
-        <h2>Contact</h2>
-        <p class="section-intro">Open to interesting projects, collaborations, and conversations about workflow automation. The best way to reach me is email.</p>
-        <div class="contact-list">
-          <a class="card" href="mailto:abdulfousan@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-            <span>Email<small>abdulfousan@gmail.com</small></span>
-          </a>
-          <a class="card" href="https://github.com/abdulfousan" rel="me">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
-            <span>GitHub<small>@abdulfousan</small></span>
-          </a>
-          <a class="card" href="https://x.com/abdulfousan" rel="me">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            <span>X / Twitter<small>@abdulfousan</small></span>
-          </a>
+        <div class="sec-head"><span class="n">03 /</span><h2>Upstream I orbit</h2></div>
+        <p class="sec-intro">Projects I've forked to read, test, patch and learn from. Open source is mostly reading other people's code — these are the codebases I keep open.</p>
+        <div class="upstream" id="upstream-list">
+          <a class="up" href="https://github.com/abdulfousan/camunda-bpm-platform"><b>camunda-bpm-platform</b><span>Workflow &amp; decision automation engine</span></a>
+          <a class="up" href="https://github.com/abdulfousan/camunda-external-task-client-js"><b>camunda-external-task-client-js</b><span>BPMN service tasks in Node.js</span></a>
+          <a class="up" href="https://github.com/abdulfousan/generator-jhipster"><b>generator-jhipster</b><span>Spring Boot + Angular app generator</span></a>
+          <a class="up" href="https://github.com/abdulfousan/dropwizard"><b>dropwizard</b><span>Simple, production-ready REST services</span></a>
+          <a class="up" href="https://github.com/abdulfousan/serverless-application-model"><b>serverless-application-model</b><span>AWS SAM, serverless on AWS</span></a>
+          <a class="up" href="https://github.com/abdulfousan/ivr-tester"><b>ivr-tester</b><span>Automated testing for IVR call flows</span></a>
+          <a class="up" href="https://github.com/abdulfousan/generator-angular-fullstack"><b>generator-angular-fullstack</b><span>Yeoman generator, Angular + Express</span></a>
+          <a class="up" href="https://github.com/abdulfousan/fs"><b>fs</b><span>File-system abstraction for the browser</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div id="marquee-track">
+        <span>BPMN 2.0</span><span>DMN</span><span>Camunda</span><span>Java</span><span>TypeScript</span><span>Quarkus</span><span>Spring Boot</span><span>React</span><span>Angular</span><span>Keycloak</span><span>AWS SAM</span><span>Docker</span><span>Node.js</span><span>open source since 2012</span>
+      </div>
+    </div>
+
+    <!-- ============ END EVENT ============ -->
+    <section class="end" id="end">
+      <div class="wrap">
+        <div class="ring" aria-hidden="true"><i></i></div>
+        <h2>End event (for now)</h2>
+        <p>Found a bug in one of my repos, want to pair on a workflow problem, or just talk BPMN? Open an issue or say hi — I read everything.</p>
+        <div class="cta" style="justify-content:center">
+          <a class="btn solid" href="https://github.com/abdulfousan" rel="me">GitHub</a>
+          <a class="btn" href="https://x.com/abdulfousan" rel="me">X / @abdulfousan</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">© <span id="year">2026</span> Abdul Fousan · Hosted on GitHub Pages</div>
+    <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+      <span>© <span id="year">2026</span> Abdul Fousan</span>
+      <span>no cookies · no trackers · just html</span>
+    </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Theme toggle
-    (function () {
-      var root = document.documentElement;
-      document.getElementById("theme-toggle").addEventListener("click", function () {
-        var dark = root.dataset.theme
-          ? root.dataset.theme === "dark"
-          : window.matchMedia("(prefers-color-scheme: dark)").matches;
-        root.dataset.theme = dark ? "light" : "dark";
-        try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
-      });
-    })();
+    // Pause SVG token animation for people who prefer reduced motion.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var svg = document.getElementById("bpmn");
+      if (svg.pauseAnimations) svg.pauseAnimations();
+    }
 
-    // Public repositories, fetched live from the GitHub API.
+    // Duplicate marquee content so the loop is seamless.
+    (function () { var t = document.getElementById("marquee-track"); t.innerHTML += t.innerHTML; })();
+
     (function () {
       var USER = "abdulfousan";
-      var HIDE = [USER, USER + ".github.io"]; // profile README and this site
-      var LIMIT = 6;
-      var LANG_COLORS = {
-        Java: "#b07219", TypeScript: "#3178c6", JavaScript: "#f1e05a", Python: "#3572A5",
-        HTML: "#e34c26", Shell: "#89e051", CSS: "#563d7c", Go: "#00ADD8"
-      };
-      var grid = document.getElementById("repos");
+      var HIDE = [USER, USER + ".github.io"];
+      var LIMIT = 8;
+      var list = document.getElementById("repos");
 
       function el(tag, attrs, text) {
         var n = document.createElement(tag);
@@ -335,53 +404,52 @@
         if (text != null) n.textContent = text;
         return n;
       }
+      function fmt(d) { return new Date(d).toLocaleDateString(undefined, { year: "numeric", month: "short" }); }
 
-      function card(r) {
-        var c = el("article", { "class": "card repo" });
-        var h = el("h3");
-        h.appendChild(el("a", { href: r.html_url }, r.name));
-        c.appendChild(h);
-        var desc = r.description || (r.fork ? "Fork of " + (r.parent ? r.parent.full_name : "an upstream project") : "No description provided.");
-        c.appendChild(el("p", {}, desc));
-        var m = el("div", { "class": "repo-meta" });
-        if (r.language) {
-          var s = el("span");
-          var dot = el("span", { "class": "lang-dot" });
-          dot.style.background = LANG_COLORS[r.language] || "var(--muted)";
-          s.appendChild(dot);
-          s.appendChild(document.createTextNode(r.language));
-          m.appendChild(s);
-        }
-        if (r.stargazers_count) m.appendChild(el("span", {}, "★ " + r.stargazers_count));
-        if (r.fork) m.appendChild(el("span", {}, "Fork"));
-        m.appendChild(el("span", {}, "Updated " + new Date(r.pushed_at).toLocaleDateString(undefined, { year: "numeric", month: "short" })));
-        c.appendChild(m);
-        return c;
+      function row(r) {
+        var li = el("li");
+        li.appendChild(el("span", { "class": "dot" }));
+        var msg = el("div", { "class": "msg" });
+        msg.appendChild(el("a", { href: r.html_url }, r.name));
+        msg.appendChild(el("small", {}, r.description || "// no description yet"));
+        li.appendChild(msg);
+        var meta = el("div", { "class": "meta" });
+        meta.appendChild(el("b", {}, r.language || "—"));
+        meta.appendChild(document.createTextNode(fmt(r.pushed_at)));
+        li.appendChild(meta);
+        return li;
       }
 
       function fail() {
-        grid.innerHTML = "";
-        var c = el("div", { "class": "card" });
-        c.appendChild(el("p", {}, "Couldn't load repositories right now. "));
-        var a = el("a", { href: "https://github.com/" + USER + "?tab=repositories" }, "Browse them on GitHub instead.");
-        c.firstChild.appendChild(a);
-        grid.appendChild(c);
+        list.innerHTML = "";
+        var li = el("li", { "class": "empty" }, "fatal: couldn't reach api.github.com — ");
+        li.appendChild(el("a", { href: "https://github.com/" + USER + "?tab=repositories" }, "browse on GitHub instead"));
+        list.appendChild(li);
       }
 
+      // Profile stats
+      fetch("https://api.github.com/users/" + USER)
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (u) {
+          if (!u) return;
+          var years = new Date().getFullYear() - new Date(u.created_at).getFullYear();
+          document.getElementById("s-years").textContent = years + "+";
+          document.getElementById("s-repos").textContent = u.public_repos;
+        }).catch(function () {});
+
+      // Repositories
       fetch("https://api.github.com/users/" + USER + "/repos?per_page=100&sort=pushed")
         .then(function (res) { if (!res.ok) throw new Error(res.status); return res.json(); })
         .then(function (repos) {
-          var list = repos
-            .filter(function (r) { return HIDE.indexOf(r.name) === -1 && !r.archived; })
-            .sort(function (a, b) {
-              // Own projects first, then forks; newest first within each.
-              if (a.fork !== b.fork) return a.fork ? 1 : -1;
-              return new Date(b.pushed_at) - new Date(a.pushed_at);
-            })
+          var forks = repos.filter(function (r) { return r.fork; }).length;
+          document.getElementById("s-forks").textContent = forks;
+          var own = repos
+            .filter(function (r) { return !r.fork && !r.archived && HIDE.indexOf(r.name) === -1; })
+            .sort(function (a, b) { return new Date(b.pushed_at) - new Date(a.pushed_at); })
             .slice(0, LIMIT);
-          if (!list.length) return fail();
-          grid.innerHTML = "";
-          list.forEach(function (r) { grid.appendChild(card(r)); });
+          if (!own.length) return fail();
+          list.innerHTML = "";
+          own.forEach(function (r) { list.appendChild(row(r)); });
         })
         .catch(fail);
     })();
